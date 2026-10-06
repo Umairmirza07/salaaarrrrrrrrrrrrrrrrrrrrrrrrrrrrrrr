@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Voice Wishe  💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="audio-wishes.css">
+  <script src="audio-wishes.js" defer></script>
+</head>
+<body>
+
+  <h1 class="title">Wishes frommmm  meee for uuuuh 💖</h1>
+  <p class="subtitle">Tap the photo sweetieeeeeeee</p>
+
+  <!-- slider like playlist -->
+  <div class="slider">
+    <button class="nav left" onclick="prevWish()">‹</button>
+
+     
+
+    <div class="voice-card hidden" data-src="me-wish.mp3" data-name="Soumya's Wish">
+      <div class="photo-wrap">
+        <img src="meee.png" alt="Me" class="voice-photo">
+        <div class="audio-icon"></div>
+      </div>
+      <h2 class="name">Meeeeee</h2>
+      <p class="hint">Tap to play / pause</p>
+    </div>
+
+    <button class="nav right" onclick="nextWish()">›</button>
+  </div>
+
+  <!-- buttons below slider -->
+  <div class="buttons-column">
+    <button class="control-btn restart-btn" id="restartBtn">Restart</button>
+    <button class="control-btn kiss-btn" id="kissBtn">Kissssssssss</button>
+  </div>
+
+  <!-- shared audio -->
+  <audio id="voiceAudio"></audio>
+
+</body>
+</html>
